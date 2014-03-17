@@ -16,7 +16,7 @@ import supybot.world as world
 __version__ = "main"
 __author__ = supybot.Author("Jacob Sanford","JS","jsanford@unb.ca")
 __contributors__ = {}
-__url__ = 'https://github.com/JacobSanford/supyhodor'
+__url__ = 'https://github.com/JacobSanford/SupyHodor'
 
 import config
 import plugin

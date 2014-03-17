@@ -27,7 +27,7 @@ __maintainer__ = "Jacob Sanford"
 __email__ = "jsanford@unb.ca"
 __status__ = "Production"
 
-class supyhodor(callbacks.Plugin) :
+class SupyHodor(callbacks.Plugin) :
     threaded = True
     def doPrivmsg(self, irc, msg) :
         if(self.registryValue('enable', msg.args[0])):
@@ -92,4 +92,4 @@ class HodorAction(object):
                 for cur_action in action_list:
                     self.add(cur_action)
 
-Class = supyhodor
+Class = SupyHodor

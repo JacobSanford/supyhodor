@@ -1,4 +1,4 @@
 from supybot.test import *
 
-class supyhodorTestCase(PluginTestCase):
-    plugins = ('supyhodor')
+class SupyHodorTestCase(PluginTestCase):
+    plugins = ('SupyHodor')

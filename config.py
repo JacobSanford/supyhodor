@@ -3,7 +3,7 @@ import supybot.registry as registry
 
 def configure(advanced):
     from supybot.questions import expect, anything, something, yn
-    conf.registerPlugin('supyhodor', True)
+    conf.registerPlugin('SupyHodor', True)
 
-supyhodor = conf.registerPlugin('supyhodor')
-conf.registerChannelValue(supyhodor,'enable',registry.Boolean('False',"""Enable displaying messages from supyhodor in channel?"""))
+SupyHodor = conf.registerPlugin('SupyHodor')
+conf.registerChannelValue(SupyHodor,'enable',registry.Boolean('False',"""Enable displaying messages from SupyHodor in channel?"""))

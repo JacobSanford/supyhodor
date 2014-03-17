@@ -1,4 +1,4 @@
-# supyhodor
+# SupyHodor
 Supybot plugin designed for hodoring.
 
 ## Use
