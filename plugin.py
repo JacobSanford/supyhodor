@@ -40,12 +40,15 @@ class SupyHodor(callbacks.Plugin) :
                 hodor = Hodor(msg.args[1], )
                 action_to_take = hodor.act()
                 time.sleep(random.random() * 5)
-                irc.queueMsg(
-                             getattr(ircmsgs,action_to_take['type'])(
-                                             msg.args[0],
-                                             action_to_take['value']
-                                             )
-                             )
+                if action_to_take['type'] == 'action':
+                    irc.queueMsg(
+                                 getattr(ircmsgs,action_to_take['type'])(
+                                                 msg.args[0],
+                                                 action_to_take['value']
+                                                 )
+                                 )
+                else:
+                    irc.reply(action_to_take['value'])
 
 class Hodor(object):
     def __init__(self, message):
